@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Barrios Digitales 4.0 Latinoamerica</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<% include complementos/plugings%>
+</head>
+<body>
+
+	<div class="super_container">
+		<% include complementos/menu %>
+			<!-- Home -->
+			<br> <br> <br><br><br><br>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="section_title_container text-center">
+							<p
+								style="	text-align: justify; color: black; font-family: 'Open Sans', sans-serif; font-size: 14px;">
+								Gracias a la alianza estratégica de CEIPLA Y MG PRODUCTIVE INVESTMENTS S.A., todas las
+								personas que desean aportar mediante su trabajo, emprendimiento o consumo a la
+								reactivación
+								productiva de Ecuador y Latinoamérica pueden hacerlo, para saber cómo puedes sumarte a
+								nuestra iniciativa por favor elige la opción con la cual te sientas más identificado:
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<img class="d-block w-100" src="img/barriosDIGITALES2.png">
+				</div>
+			</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<br>
+				<div class="section_title_container text-center">
+					<div
+						style="font-size: 20px; color: black; text-transform: uppercase;	text-align:center; font-family:'Open Sans',sans-serif;">
+						¿Qué son los Barrios Digitales 4.0?</div>
+					<br>
+					<p style="font-size: 14px; color: black; 	text-align:left; font-family:'Open Sans',sans-serif;">
+						<b>Barrios Digitales 4.0</b>
+						propuesta de CEIPLA nace en el 2015 después de realizar un exhaustivo análisis productivo en
+						diversos países de la región, desarrollando en <b>Ecuador</b> el piloto que tiene como
+						objetivo la reactivación de la micro economía, mipymes, sector industrial, desarrollo de
+						plataformas tecnológicas e impulsando la democratización y acceso de las mismas. <br><br>
+						Es un proceso de modernización y la innovación a través de la <b>digitalización</b> de los
+						<b>barrios</b> en todo el <b>Ecuador</b>. Para esto es necesario impulsar los
+						<b>emprendimientos</b> locales mediante la digitalización.
+						Para llevar a cabo la reactivación <b>productiva</b> se necesita crear un valor agregado por
+						parte de las <b>pymes</b> hacia el <b>consumidor</b>, es decir un espacio en el que puedan
+						ofertar sus productos y servicios en Internet. <br><br>
+						En este contexto MarketClick, plataforma <b>e-commerce</b>, y <b>CEIPLA</b> trabajan
+						activamente en el empoderamiento de los barrios a través de diversas estrategias como;
+						acceso a nano <b>créditos</b> y <b>microcréditos</b> para el fortalecimiento de sus
+						negocios; capacitación continua en la <b>digitalización</b>, marketing, ventas, modelos de
+						negocio, esto con el fin de aportar a su formación, profesionalización y formalización.
+						<br><br>
+						Como parte del impulso comercial llevado a cabo, actualmente se trabaja de manera conjunta
+						con 240 mil tiendas de barrio en todo el Ecuador, generando beneficios directos para quienes
+						trabajan en el sector de las pymes, formando parte de una Estrategia de Modernización,
+						Innovación y Digitalización del Comercio en Latinoamérica.
+						La combinación de todas estas herramientas brinda un impulso a la reactivación económica en
+						nuestro país, brindando una mejor conexión entre la oferta y la demanda en el mercado y
+						asegurando una respuesta ágil y rápida ante la necesidad de modernizar e innovar a los
+						barrios en toda Latinoamérica.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<br> <br> <br> <br> <br> <br>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<br><br><br>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<img class="d-block w-100" src="img/izquierdo.png">
+					</div>
+				</div>
+				<br><br>
+			</div>
+			<div class="col-lg-5">
+				<div id="twitch-embed"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<% include complementos/footer %>
+		<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+		<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+		<script type="text/javascript">
+			new Twitch.Embed("twitch-embed", {
+				width: 400,
+				height: 500,
+				channel: "ceipla20",
+				// only needed if your site is also embedded on embed.example.com and othersite.example.com 
+				parent: ["embed.example.com", "othersite.example.com"]
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$("#detalleWp").css({ "display": "none" });
+				$("#btnWp").css({ "display": "block" });
+				$("#btnWpClose").css({ "display": "none" });
+				$("#btnWp").click(function () {
+					$("#detalleWp").css({ "display": "block" });
+					$("#btnWp").css({ "display": "none" });
+					$("#btnWpClose").css({ "display": "block" });
+				});
+				$("#btnWpClose").click(function () {
+					$("#detalleWp").css({ "display": "none" });
+					$("#btnWp").css({ "display": "block" });
+					$("#btnWpClose").css({ "display": "none" });
+				});
+			});
+		</script>
+</body>
+
+</html>
